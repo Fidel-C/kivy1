@@ -1,0 +1,94 @@
+<Dashboard>:
+    MDBoxLayout:
+        orientation: 'vertical'
+        MDToolbar:
+            title: "Dashboard"
+            md_bg_color: [1,0.7,0,1]
+            right_left_items: [["logout", lambda x: root.logout()]]
+            MDRoundFlatIconButton:
+                icon:"cart"
+                text:str(len(root.cart))
+                pos_hint:{"y":0.2}
+                text_color: [1,1,1,1]
+                on_press:root.show_cart()
+        MDBoxLayout:
+            id:box
+            # To create a card with swipe-to-delete behavior
+            # You must create a new class that inherits from the MDCardSwipe class
+            padding:dp(20)           
+            spacing:dp(10)           
+            MDSwiper:
+                size_hint_y: None
+                height:1.7/10*root.height
+                MDSwiperItem:
+                    FitImage:
+                        source:"images/cabletv.jpg"
+                        radius:[20,]
+                MDSwiperItem:
+                    FitImage:
+                        source:"images/cable tv.jpg"
+                        radius:[20,]
+                MDSwiperItem:
+                    FitImage:
+                        source:"images/gotv.jpg"
+                        radius:[20,]
+                MDSwiperItem:
+                    FitImage:
+                        source:"images/startimes.jpg"
+                        radius:[20,]
+                MDSwiperItem:
+                    FitImage:
+                        source:"images/dstv.jpg"
+                        radius:[20,]
+        RV:                           
+            viewclass:"ProductCard"
+            id:rv
+            RecycleGridLayout:
+                default_size: None, dp(200)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                cols:2
+                padding:dp(20)
+                spacing: '10dp'
+
+
+                    
+<ProductCard>:
+    padding:dp(10)
+    radius:dp(20)
+    elevation:dp(10)
+    MDBoxLayout:
+        orientation: "vertical"
+        padding:dp(10)
+        MDLabel:
+            text:root.prod_title
+            halign:"center"
+        FloatLayout:
+            MDIconButton:
+                icon:"more"
+                pos_hint: {'x': 0.1,'y': 0.1}
+                on_press:root.get_detail(root.prod_id)
+        
+            MDIconButton:
+                icon:"cart"
+                pos_hint: {'right':0.9 ,'y': 0.1}
+                on_press:root.add_to_cart(root.prod_id)
+
+
+    
+                        
+                    
+
+            
+        
+
+
+
+    
+
+   
+               
+
+
+    
