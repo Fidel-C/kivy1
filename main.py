@@ -4,7 +4,6 @@ from kivy.network.urlrequest import UrlRequest
 from kivymd.app import MDApp
 from kaki.app import App
 from kivy.factory import Factory
-Window.size=(360,640)
 
 
 

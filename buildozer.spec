@@ -72,7 +72,11 @@ six==1.16.0,
 toml==0.10.2,
 urllib3==1.26.8,
 watchdog==2.1.8,
+<<<<<<< HEAD
 zipp==3.8.0,
+=======
+zipp==3.8.0
+>>>>>>> 5f70a4c (added correct icon path)
 
 
 # (str) Custom source folders for requirements
@@ -255,7 +259,11 @@ android.permissions = INTERNET
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
+<<<<<<< HEAD
 android.ouya.icon.filename = %(source.dir)s/images/startimes.png
+=======
+android.ouya.icon.filename = %(source.dir)s/images/startimes.jpg
+>>>>>>> 5f70a4c (added correct icon path)
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
@@ -463,4 +471,8 @@ warn_on_root = 1
 #
 #    Then, invoke the command line with the "demo" profile:
 #
+<<<<<<< HEAD
 #buildozer --profile demo android debug
+=======
+#buildozer --profile demo android debug
+>>>>>>> 5f70a4c (added correct icon path)
