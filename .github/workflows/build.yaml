@@ -1,4 +1,4 @@
-name: onqodedata
+name: CI
 on:
   push:
     branches: [ master ]
@@ -38,5 +38,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: onqodedata
+          name: package
           path: ${{ steps.buildozer.outputs.filename }}
