@@ -3,3 +3,4 @@ __pycache__/
 VENV/
 ENV/
 env/
+requirements.txt
