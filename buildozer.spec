@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kaki==0.1.5,Kivy==2.1.0,watchdog==2.1.8,kivymd==0.104.2,Pillow==9.0.1
+requirements = python3,kaki==0.1.5,Kivy,watchdog==2.1.8,kivymd==0.104.2,Pillow==9.0.1
 
 
 # (str) Custom source folders for requirements
@@ -67,7 +67,7 @@ orientation = all
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 1.9.0
+osx.kivy_version = 1.9.1
 
 #
 # Android specific
