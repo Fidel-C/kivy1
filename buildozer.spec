@@ -51,7 +51,7 @@ requirements = python3,kaki==0.1.5,Kivy==2.1.0,watchdog==2.1.8,kivymd==0.104.2,P
 icon.filename = %(source.dir)s/images/logo.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
+orientation = all
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -67,7 +67,7 @@ orientation = portrait
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 2.1.0
+osx.kivy_version = 1.9.0
 
 #
 # Android specific
