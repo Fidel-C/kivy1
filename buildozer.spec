@@ -13,7 +13,7 @@ package.domain = onqode.data
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,txt
 
 # (list) List of inclusions using pattern matching
 source.include_patterns = assets/*,images/*.png
@@ -48,7 +48,7 @@ requirements = python3,kivy,kivymd,Pillow,watchdog,kaki
 #presplash.filename = %(source.dir)s/images/logo.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/logo.png
+#icon.filename = %(source.dir)s/images/logo.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
