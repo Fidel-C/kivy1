@@ -37,43 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,appdirs==1.4.4,
-certifi==2021.10.8,
-charset-normalizer==2.0.12,
-colorama==0.4.4,
-docutils==0.18.1,
-idna==3.3,
-importlib-metadata==4.11.3,
-Jinja2==3.1.1,
-kaki==0.1.5,
-Kivy==2.1.0,
-kivy-deps.angle==0.3.2,
-kivy-deps.glew==0.3.1,
-kivy-deps.sdl2==0.4.5,
-Kivy-Garden==0.1.4,
-kivymd==0.104.2,
-MarkupSafe==2.1.1,
-monotonic==1.6,
-numpy==1.22.3,
-pandas==1.4.2,
-pep517==0.6.0,
-Pillow==9.0.1,
-Pygments==2.11.2,
-pyjnius==1.4.1,
-pypiwin32==223,
-python-dateutil==2.8.2,
-python-for-android==2022.3.13,
-pytoml==0.1.21,
-pytz==2022.1,
-pywin32==303,
-requests==2.27.1,
-sh==1.14.2,
-six==1.16.0,
-toml==0.10.2,
-urllib3==1.26.8,
-watchdog==2.1.8,
-zipp==3.8.0,
-
+requirements = python3,kivy,kivymd
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
