@@ -13,10 +13,10 @@ package.domain = onqode.data
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas,txt
+source.include_exts = py,png,jpg,kv,atlas
 
 # (list) List of inclusions using pattern matching
-source.include_patterns = assets/*,images/*.png
+#source.include_patterns = assets/*,images/*.png
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
@@ -37,7 +37,42 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kaki==0.1.5,Kivy,watchdog==2.1.8,kivymd==0.104.2,Pillow==9.0.1
+requirements = python3,kivy,appdirs==1.4.4,
+certifi==2021.10.8,
+charset-normalizer==2.0.12,
+colorama==0.4.4,
+docutils==0.18.1,
+idna==3.3,
+importlib-metadata==4.11.3,
+Jinja2==3.1.1,
+kaki==0.1.5,
+Kivy==2.1.0,
+kivy-deps.angle==0.3.2,
+kivy-deps.glew==0.3.1,
+kivy-deps.sdl2==0.4.5,
+Kivy-Garden==0.1.4,
+kivymd==0.104.2,
+MarkupSafe==2.1.1,
+monotonic==1.6,
+numpy==1.22.3,
+pandas==1.4.2,
+pep517==0.6.0,
+Pillow==9.0.1,
+Pygments==2.11.2,
+pyjnius==1.4.1,
+pypiwin32==223,
+python-dateutil==2.8.2,
+python-for-android==2022.3.13,
+pytoml==0.1.21,
+pytz==2022.1,
+pywin32==303,
+requests==2.27.1,
+sh==1.14.2,
+six==1.16.0,
+toml==0.10.2,
+urllib3==1.26.8,
+watchdog==2.1.8,
+zipp==3.8.0,
 
 
 # (str) Custom source folders for requirements
@@ -45,10 +80,10 @@ requirements = python3,kaki==0.1.5,Kivy,watchdog==2.1.8,kivymd==0.104.2,Pillow==
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/images/logo.png
+#presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/images/logo.png
+#icon.filename = %(source.dir)s/data/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = all
@@ -81,7 +116,7 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-android.presplash_color = #FFFFFF
+#android.presplash_color = #FFFFFF
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
@@ -91,7 +126,7 @@ android.presplash_color = #FFFFFF
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
 #icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
-# icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
+#icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
 android.permissions = INTERNET
@@ -220,7 +255,7 @@ android.permissions = INTERNET
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-#android.ouya.icon.filename = %(source.dir)simages/startimes.jpg
+android.ouya.icon.filename = %(source.dir)s/images/startimes.png
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
