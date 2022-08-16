@@ -37,23 +37,19 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,appdirs==1.4.4,certifi==2021.10.8,charset-normalizer==2.0.12,colorama==0.4.4,docutils==0.18.1,idna==3.3,importlib-metadata==4.11.3,
-Jinja2==3.1.1,kaki==0.1.5,Kivy==2.1.0,kivy-deps.angle==0.3.2,kivy-deps.glew==0.3.1,kivy-deps.sdl2==0.4.5,
-Kivy-Garden==0.1.4,kivymd==0.104.2,MarkupSafe==2.1.1,monotonic==1.6,numpy==1.22.3,pandas==1.4.2,pep517==0.6.0,
-Pillow==9.0.1,Pygments==2.11.2,pyjnius==1.4.1,pypiwin32==223,python-dateutil==2.8.2,python-for-android==2022.3.13,pytoml==0.1.21,pytz==2022.1,pywin32==303,requests==2.27.1,sh==1.14.2,six==1.16.0,toml==0.10.2,urllib3==1.26.8,watchdog==2.1.8,zipp==3.8.0,zipp==3.8.0
-
+requirements = python3,kivy,kivymd==0.104.2,Pillow==9.0.1
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = %(source.dir)s/images/startimes.jpg
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/images/startimes.jpg
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
-orientation = portrait
+orientation = all
 
 # (list) List of service to declare
 #services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
@@ -83,7 +79,7 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-#android.presplash_color = #FFFFFF
+android.presplash_color = #FFFFFF
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
@@ -93,10 +89,10 @@ fullscreen = 0
 
 # (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
 #icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
-#icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
+# icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
 
 # (list) Permissions
-android.permissions = INTERNET
+android.permissions = INTERNET,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,CHANGE_NETWORK_STATE,ACCESS_NETWORK_STATE
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
@@ -222,7 +218,7 @@ android.permissions = INTERNET
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-android.ouya.icon.filename = %(source.dir)s/images/startimes.jpg
+#android.ouya.icon.filename = %(source.dir)simages/startimes.jpg
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =

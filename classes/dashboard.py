@@ -12,7 +12,6 @@ from kivy.properties import StringProperty,ListProperty,ObjectProperty,NumericPr
 from kivy.uix.recycleview import RecycleView
 from kivymd.app import App
 from kivy.uix.image import AsyncImage
-import webbrowser
 
 
 
@@ -60,22 +59,11 @@ class Dashboard(MDScreen):
         # container=MDList()
         for item in range(10):
             self.ids.box.add_widget(CartItem(title=f"item {item}",text="jgkkh"))
-            # self.ids.box.add_widget(container)
-            
-            
-
-        # dialog.title="Cart" 
-        # dialog.buttons=cards
-        # dialog.open()
-        # webbrowser.open("https://mobiledata.com.ng")
-        
 
 
 
 class CartItem(ThreeLineListItem):
     title=StringProperty()
-    # qty=NumericProperty()
-    # id=NumericProperty()
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
