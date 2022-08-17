@@ -27,12 +27,9 @@ class MainApp(App,MDApp):
         return Factory.Manager()
 
     def on_start(self):
-
-
         return super().on_start()        
             
-            
-if __name__=="__main__":
-    MainApp().run()
+
+MainApp().run()
 
 
