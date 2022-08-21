@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = onqodedata
 
 # (str) Package name
-package.name = myapp
+package.name = onqodedata
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.onqodedata
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -60,7 +60,7 @@ orientation = all
 #
 
 #
-# author = © Copyright Info
+ author = © Copyright Fidel C.
 
 # change the major version of python used by the app
 osx.python_version = 3
