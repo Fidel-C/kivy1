@@ -1,4 +1,3 @@
-import json,os,ssl
 from kivy.core.window import Window
 from kivy.network.urlrequest import UrlRequest
 from kivymd.app import MDApp
@@ -6,7 +5,6 @@ from kaki.app import App
 from kivy.factory import Factory
 
 
-ssl._create_default_https_context=ssl._create_unverified_context
 
 class MainApp(App,MDApp):
    
