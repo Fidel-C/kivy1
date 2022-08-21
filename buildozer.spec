@@ -60,7 +60,7 @@ orientation = all
 #
 
 #
- author = © Copyright Fidel C
+author = © Copyright Fidel C
 
 # change the major version of python used by the app
 osx.python_version = 3
