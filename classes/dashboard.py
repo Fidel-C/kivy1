@@ -29,7 +29,7 @@ class Dashboard(MDScreen):
         self.manager.transition=FadeTransition()
 
 
-    url="https://jsonplaceholder.typicode.com/posts/"
+    url="https://dummyjson.com/posts"
 
     
 
@@ -41,15 +41,15 @@ class Dashboard(MDScreen):
     def get_all_posts(self):
         req=UrlRequest(self.url,on_success=self.get_json,on_error=self.get_error)
 
-
     def get_detail(self,*args):
-        req=UrlRequest(f"{self.url}/{args[0]}",on_success=self.get_one_json,on_error=self.get_error)
+        UrlRequest(f"{self.url}/{args[0]}",on_success=self.get_one_json,on_error=self.get_error)
 
 
 
     def get_json(self, req,res):
-        self.ids.rv.data=[{"prod_title":item["title"],"prod_id":item["id"]} for item in res]
-
+        self.ids.rv.data=[{"prod_title":item["title"],"prod_id":item["id"]} for item in res['posts']]
+        print(*res)
+        
     def get_error(self,*args):
         dialog=MDDialog()
         dialog.add_widget(MDLabel(text=str(args[1]),halign="center"))
